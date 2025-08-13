@@ -143,13 +143,13 @@
                 </div>
                 <div class="zipBox flex flex-col ">
                     <span class="font-bold m-1">Price ($) min/max:</span>
-                    <div class="flex flex-col gap-4">
+                    <div class="flex flex-col gap-4 lg:flex-row">
                         <input
-                            class="border-2 border-[#B4B4B4] rounded-md h-[45px] p-3 text-[14px] latter-spacing-[-4px]"
-                            type="text" placeholder="Zip Code Enter">
+                            class="border-2 border-[#B4B4B4] rounded-md h-[45px] lg:w-[50%] p-3 text-[14px] latter-spacing-[-4px]"
+                            type="text" placeholder="Min price">
                         <input
-                            class="border-2 border-[#B4B4B4] rounded-md h-[45px] p-3 text-[14px] latter-spacing-[-4px]"
-                            type="text" placeholder="Zip Code Enter">
+                            class="border-2 border-[#B4B4B4] rounded-md h-[45px] lg:w-[50%] p-3 text-[14px] latter-spacing-[-4px]"
+                            type="text" placeholder="Max price">
                     </div>
                 </div>
                 <div class="trailerBox flex flex-col">
@@ -158,9 +158,124 @@
                         type="text" placeholder="Gas">
                 </div>
             </div>
+            <div class="flex justify-center items-center mt-6">
+                <button
+                    class="bg-[#FE5214] flex justify-center items-center gap-2 md:w-[22%] h-[45px] p-5 mt-5 rounded-[3px] ">
+                    <svg class="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                        color="#fff" fill="none">
+                        <path d="M16.0001 16.5L20 20.5" stroke="#fff" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path
+                            d="M18 11.5C18 15.366 14.866 18.5 11 18.5C7.13401 18.5 4 15.366 4 11.5C4 7.63404 7.13401 4.50003 11 4.50003"
+                            stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M15.5 3.50003L15.7579 4.19706C16.0961 5.11105 16.2652 5.56805 16.5986 5.90142C16.932 6.2348 17.389 6.4039 18.303 6.74211L19 7.00003L18.303 7.25795C17.389 7.59616 16.932 7.76527 16.5986 8.09864C16.2652 8.43201 16.0961 8.88901 15.7579 9.803L15.5 10.5L15.2421 9.803C14.9039 8.88901 14.7348 8.43201 14.4014 8.09864C14.068 7.76527 13.611 7.59616 12.697 7.25795L12 7.00003L12.697 6.74211C13.611 6.4039 14.068 6.2348 14.4014 5.90142C14.7348 5.56805 14.9039 5.11105 15.2421 4.19706L15.5 3.50003Z"
+                            stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <span class="text-white font-semibold uppercase latter-spacing-[-4px]">Search</span>
+                </button>
+            </div>
         </div>
-
     </section>
+    <!-- trailer section -->
+    <section class="mt-[5rem]">
+        <div class="searchBar max-w-[75%] md:max-w-[65%] mx-auto">
+            <div class="flex justify-between items-center">
+                <h3 class="text-2xl md:text-3xl lg:text-4xl"><b>Featured</b> Trailers</h3>
+                <div class="flex gap-2 w-[10%]">
+                    <img src="/images/nextback/back.png" alt="back">
+                    <img src="/images/nextback/next.png" alt="next">
+                </div>
+            </div>
+            <span class="inline-block bg-[#FE5214] w-full h-[1.3px]"></span>
+        </div>
+        <div class="allTrailer max-w-[75%] md:max-w-[65%] mx-auto mt-8">
+            <!--main div -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+                <div class="trailerOne w-[100%] md:w-[100%] flex flex-col gap-2 bg-[#FFF7F4] border-2 border-[#FFD8CA]">
+                    <div class="relative overflow-hidden">
+                        <img class="image " src="/images/featureTrailer/Mask group (2).jpg" alt="trailer1">
+                        <div class="absolute flex justify-between gap-5 inset-x-0 top-0 mt-2">
+                            <img class="w-[35%]" src="/images/featureTrailer/featured.png" alt="featured">
+                            <img class="pr-2" src="/images/featureTrailer/favPng.png" alt="favorite">
+                        </div>
+                    </div>
+                    <div class="trailerText max-w-[90%] mx-auto flex flex-col gap-2">
+                        <p>Lamborghini Aventador '2025</p>
+                        <span class="text-[#FE5214] font-bold text-[20px]">$150.00</span>
+                        <span class="inline-block border-[1.5px] border-dashed  border-[#FE5214] "></span>
+                        <span class="text-[16px]"><b>Location:</b>Germany / Berlin / Gosen</span>
+                        <span><b>Type:</b>New</span>
+                        <span><b>Size:</b>48 ft – 53 ft, 8.5 ft, 8.5 ft</span>
+                    </div>
+                    <div class="trailerBtn max-w-[90%] mx-auto flex justify-between items-center gap-2">
+                        <button
+                            class="bg-[#FE5214] text-white text-[10px] font-semibold uppercase px-6 py-2 rounded-[2px] latter-spacing-[-4px]">I
+                            want
+                            this one</button>
+                        <button
+                            class="bg-[#FFEDE6] text-[#FE5214]  border-2 border-[#FE5214] text-[10px] font-semibold uppercase px-6 py-2 rounded-[2px] latter-spacing-[-4px]">View
+                            details</button>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="trailerOne w-[100%] md:w-[100%] flex flex-col gap-2 bg-[#FFF7F4] border-2 border-[#FFD8CA]">
+                    <div class="relative">
+                        <img class="image" src="/images/featureTrailer/Mask group (2).jpg" alt="trailer1">
+                        <div class="absolute flex justify-between gap-5 inset-x-0 top-0 mt-2">
+                            <img class="w-[35%]" src="/images/featureTrailer/featured.png" alt="featured">
+                            <img class="pr-2" src="/images/featureTrailer/favPng.png" alt="favorite">
+                        </div>
+                    </div>
+                    <div class="trailerText max-w-[90%] mx-auto flex flex-col gap-2">
+                        <p>Lamborghini Aventador '2025</p>
+                        <span class="text-[#FE5214] font-bold text-[20px]">$150.00</span>
+                        <span class="inline-block border-[1.5px] border-dashed  border-[#FE5214] "></span>
+                        <span class="text-[16px]"><b>Location:</b>Germany / Berlin / Gosen</span>
+                        <span><b>Type:</b>New</span>
+                        <span><b>Size:</b>48 ft – 53 ft, 8.5 ft, 8.5 ft</span>
+                    </div>
+                    <div class="trailerBtn max-w-[90%] mx-auto flex justify-between items-center gap-2">
+                        <button
+                            class="bg-[#FE5214] text-white text-[10px] font-semibold uppercase px-6 py-2 rounded-[2px] latter-spacing-[-4px]">I
+                            want
+                            this one</button>
+                        <button
+                            class="bg-[#FFEDE6] text-[#FE5214]  border-2 border-[#FE5214] text-[10px] font-semibold uppercase px-6 py-2 rounded-[2px] latter-spacing-[-4px]">View
+                            details</button>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="trailerOne w-[100%] md:w-[100%] flex flex-col gap-2 bg-[#FFF7F4] border-2 border-[#FFD8CA]">
+                    <div class="relative">
+                        <img class="image" src="/images/featureTrailer/Mask group (2).jpg" alt="trailer1">
+                        <div class="absolute flex justify-between gap-5 inset-x-0 top-0 mt-2">
+                            <img class="w-[35%]" src="/images/featureTrailer/featured.png" alt="featured">
+                            <img class="pr-2" src="/images/featureTrailer/favPng.png" alt="favorite">
+                        </div>
+                    </div>
+                    <div class="trailerText max-w-[90%] mx-auto flex flex-col gap-2">
+                        <p>Lamborghini Aventador '2025</p>
+                        <span class="text-[#FE5214] font-bold text-[20px]">$150.00</span>
+                        <span class="inline-block border-[1.5px] border-dashed  border-[#FE5214] "></span>
+                        <span class="text-[16px]"><b>Location:</b>Germany / Berlin / Gosen</span>
+                        <span><b>Type:</b>New</span>
+                        <span><b>Size:</b>48 ft – 53 ft, 8.5 ft, 8.5 ft</span>
+                    </div>
+                    <div class="trailerBtn max-w-[90%] mx-auto flex justify-between items-center gap-2">
+                        <button
+                            class="bg-[#FE5214] text-white text-[10px] font-semibold uppercase px-6 py-2 rounded-[2px] latter-spacing-[-4px]">I
+                            want
+                            this one</button>
+                        <button
+                            class="bg-[#FFEDE6] text-[#FE5214]  border-2 border-[#FE5214] text-[10px] font-semibold uppercase px-6 py-2 rounded-[2px] latter-spacing-[-4px]">View
+                            details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
 
 </html>
