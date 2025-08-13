@@ -25,7 +25,7 @@
     </script>
 </head>
 
-<body class="font-inter bg-gray-300">
+<body class="font-inter">
     <!-- top header section -->
     <section class="bg-[#FE5214] w-full hidden sm:block">
         <div
@@ -43,15 +43,16 @@
             <div class="signInTop flex gap-4 items-center ml-5">
                 <img src="/images/topheader/person_black_24dp 1.svg" alt="person">
                 <span class="text-white uppercase cursor-pointer">Sign In</span>
-                <span class="w-1 h-5 bg-[#FFFFFF] inline-block pointer"></span>
+                <span class="w-[1.5px] h-5 bg-[#FFFFFF] inline-block pointer"></span>
                 <img class="pointer pl-0" src="/images/topheader/favorite_border_black_24dp 1.svg" alt="">
             </div>
         </div>
     </section>
     <!-- header section -->
-    <section class="bg-[#F5F5F5]">
-        <div class="header max-w-[80%] m-auto flex justify-between items-center">
-            <div class="headerLogo w-[150px] md:w-[180px] lg:w-[230px] h-[85px] flex justify-center items-center">
+    <section class="bg-[#FE5214] md:bg-[#F5F5F5]">
+        <div class="header max-w-[80%] mx-auto flex justify-between items-center">
+            <div
+                class="headerLogo w-[150px] ml-[-2rem] md:w-[180px] lg:w-[230px] h-[85px] flex justify-center items-center">
                 <img src="/images/logoHeader/logo 03 1.png" alt="logo">
             </div>
             <div>
@@ -107,6 +108,58 @@
                 </p>
             </div>
         </div>
+    </section>
+    <!-- search section  -->
+    <section class="mt-8">
+        <div class="searchBar max-w-[75%] md:max-w-[65%] mx-auto">
+            <h3 class="font-bold text-2xl md:text-3xl lg:text-4xl">Search</h3>
+            <span class="inline-block bg-[#FE5214] w-full h-[1.3px]"></span>
+        </div>
+        <div class="searchInput bg-[#FFF7F4] max-w-[75%] md:max-w-[65%] mx-auto mt-4 p-4">
+            <div class="inputBox grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-4">
+                <div class="locationBox flex flex-col">
+                    <span class="font-bold m-1">Location</span>
+                    <input
+                        class="border-2 border-[#B4B4B4] text-[#747474] rounded-md h-[45px] p-3 text-[14px] latter-spacing-[-4px]"
+                        type="text" placeholder="Enter Location">
+                </div>
+                <div class="zipBox flex flex-col">
+                    <span class="font-bold m-1">Zip Code</span>
+                    <input class="border-2 border-[#B4B4B4] rounded-md h-[45px] p-3 text-[14px] latter-spacing-[-4px]"
+                        type="text" placeholder="Zip Code Enter">
+                </div>
+                <div class="trailerBox flex flex-col">
+                    <span class="font-bold m-1">Trailers Category:</span>
+                    <input class="border-2 border-[#B4B4B4] rounded-md h-[45px] p-3 text-[14px] latter-spacing-[-4px]"
+                        type="text" placeholder="Select trailers category">
+                </div>
+            </div>
+            <!--  -->
+            <div class="inputBox grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-4 mt-2">
+                <div class="locationBox flex flex-col">
+                    <span class="font-bold m-1">Trailer Size:</span>
+                    <input class="border-2 border-[#B4B4B4] rounded-md h-[45px] p-3 text-[14px] latter-spacing-[-4px]"
+                        type="text" placeholder="Select trailer size">
+                </div>
+                <div class="zipBox flex flex-col ">
+                    <span class="font-bold m-1">Price ($) min/max:</span>
+                    <div class="flex flex-col gap-4">
+                        <input
+                            class="border-2 border-[#B4B4B4] rounded-md h-[45px] p-3 text-[14px] latter-spacing-[-4px]"
+                            type="text" placeholder="Zip Code Enter">
+                        <input
+                            class="border-2 border-[#B4B4B4] rounded-md h-[45px] p-3 text-[14px] latter-spacing-[-4px]"
+                            type="text" placeholder="Zip Code Enter">
+                    </div>
+                </div>
+                <div class="trailerBox flex flex-col">
+                    <span class="font-bold m-1">Fuel Type:</span>
+                    <input class="border-2 border-[#B4B4B4] rounded-md h-[45px] p-3 text-[14px] latter-spacing-[-4px]"
+                        type="text" placeholder="Gas">
+                </div>
+            </div>
+        </div>
+
     </section>
 </body>
 
