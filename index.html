@@ -25,17 +25,17 @@
     </script>
 </head>
 
-<body class="font-inter bg-gray-300 border-black-400">
+<body class="font-inter bg-gray-300">
     <!-- top header section -->
-    <section class="bg-[#FE5214]">
-        <div class="topHeader max-w-[80%] m-auto flex justify-between items-center p-1">
-        <!-- <div class="topHeader max-w-[80%] m-auto flex flex-col sm:flex-row justify-between items-center p-1 gap-2"> -->
-            <div class="streetTop flex justify-center items-center gap-8">
+    <section class="bg-[#FE5214] w-full hidden sm:block">
+        <div
+            class="max-w-[85%] sm:max-w-[80%] mx-auto flex flex-col text-sm sm:flex-row justify-between items-center gap-3 p-2 ">
+            <div class="streetTop flex flex-col md:flex-row items-center gap-4">
                 <div class="headerLocation flex gap-2">
                     <img src="/images/topheader/location_on_black_24dp (3) 2.svg" alt="location">
                     <span class="text-white uppercase cursor-pointer">12 Street, Los Angeles, CA, 94101</span>
                 </div>
-                <div class="headerCall flex gap-2 ">
+                <div class="headerCall  flex gap-2 ">
                     <img src="/images/topheader/call_black_24dp (1) 2.svg" alt="call">
                     <span class="text-white uppercase cursor-pointer">+91 70012 72388</span>
                 </div>
@@ -51,12 +51,11 @@
     <!-- header section -->
     <section class="bg-[#F5F5F5]">
         <div class="header max-w-[80%] m-auto flex justify-between items-center">
-            <div
-                class="headerLogo w-[150px] md:w-[180px] lg:w-[230px] h-[85px] overflow-hidden flex justify-center items-center">
+            <div class="headerLogo w-[150px] md:w-[180px] lg:w-[230px] h-[85px] flex justify-center items-center">
                 <img src="/images/logoHeader/logo 03 1.png" alt="logo">
             </div>
             <div>
-                <ul class="flex justify-around items-center gap-6 font-semibold font-[18px] font-medium">
+                <ul class="hidden lg:flex gap-6 font-semibold">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Featured</a></li>
                     <li><a href="#">Listing</a></li>
@@ -64,9 +63,27 @@
                     <li><a href="#">Seller</a></li>
                     <li><a href="#">Search</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
-                <div class="">
+                <!-- mobile menu -->
+                <div class="md:block lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000"
+                        fill="none">
+                        <path
+                            d="M2 18C2 16.4596 2 15.6893 2.34673 15.1235C2.54074 14.8069 2.80693 14.5407 3.12353 14.3467C3.68934 14 4.45956 14 6 14C7.54044 14 8.31066 14 8.87647 14.3467C9.19307 14.5407 9.45926 14.8069 9.65327 15.1235C10 15.6893 10 16.4596 10 18C10 19.5404 10 20.3107 9.65327 20.8765C9.45926 21.1931 9.19307 21.4593 8.87647 21.6533C8.31066 22 7.54044 22 6 22C4.45956 22 3.68934 22 3.12353 21.6533C2.80693 21.4593 2.54074 21.1931 2.34673 20.8765C2 20.3107 2 19.5404 2 18Z"
+                            stroke="#141B34" stroke-width="1.5" />
+                        <path
+                            d="M14 18C14 16.4596 14 15.6893 14.3467 15.1235C14.5407 14.8069 14.8069 14.5407 15.1235 14.3467C15.6893 14 16.4596 14 18 14C19.5404 14 20.3107 14 20.8765 14.3467C21.1931 14.5407 21.4593 14.8069 21.6533 15.1235C22 15.6893 22 16.4596 22 18C22 19.5404 22 20.3107 21.6533 20.8765C21.4593 21.1931 21.1931 21.4593 20.8765 21.6533C20.3107 22 19.5404 22 18 22C16.4596 22 15.6893 22 15.1235 21.6533C14.8069 21.4593 14.5407 21.1931 14.3467 20.8765C14 20.3107 14 19.5404 14 18Z"
+                            stroke="#141B34" stroke-width="1.5" />
+                        <path
+                            d="M2 6C2 4.45956 2 3.68934 2.34673 3.12353C2.54074 2.80693 2.80693 2.54074 3.12353 2.34673C3.68934 2 4.45956 2 6 2C7.54044 2 8.31066 2 8.87647 2.34673C9.19307 2.54074 9.45926 2.80693 9.65327 3.12353C10 3.68934 10 4.45956 10 6C10 7.54044 10 8.31066 9.65327 8.87647C9.45926 9.19307 9.19307 9.45926 8.87647 9.65327C8.31066 10 7.54044 10 6 10C4.45956 10 3.68934 10 3.12353 9.65327C2.80693 9.45926 2.54074 9.19307 2.34673 8.87647C2 8.31066 2 7.54044 2 6Z"
+                            stroke="#141B34" stroke-width="1.5" />
+                        <path
+                            d="M14 6C14 4.45956 14 3.68934 14.3467 3.12353C14.5407 2.80693 14.8069 2.54074 15.1235 2.34673C15.6893 2 16.4596 2 18 2C19.5404 2 20.3107 2 20.8765 2.34673C21.1931 2.54074 21.4593 2.80693 21.6533 3.12353C22 3.68934 22 4.45956 22 6C22 7.54044 22 8.31066 21.6533 8.87647C21.4593 9.19307 21.1931 9.45926 20.8765 9.65327C20.3107 10 19.5404 10 18 10C16.4596 10 15.6893 10 15.1235 9.65327C14.8069 9.45926 14.5407 9.19307 14.3467 8.87647C14 8.31066 14 7.54044 14 6Z"
+                            stroke="#141B34" stroke-width="1.5" />
+                    </svg>
+                </div>
+                <div class="hidden lg:block">
                     <span class="w-[48px] h-[6px] bg-[#FE5214] inline-block absolute mt-6"></span>
                 </div>
             </div>
@@ -75,15 +92,19 @@
 
     <!-- hero section -->
     <section class="mt-8">
-        <div class="hero max-w-[80%] m-auto relative">
-            <img src="/images/hero/heroImages.jpg" alt="heroImage">
-            <img class="absolute top-0 left-0 ml-[-18px] w-[15rem] h-[4rem]" src="/images/hero/featured.png"
-                alt="featured">
-            <div class="absolute inset-x-0 bottom-0 h-[8rem] flex items-center">
-                <div class="absolute inset-0 bg-[#000000] opacity-50 overflow-hidden"></div>
-                <p class="absolute text-white lg:text-5xl w-[60rem] p-6 opacity-100 font-light"><b
-                        class="font-bold">Discover the
-                        used Concession</b> Trailers & Trucks that is Right for you</p>
+        <div class="hero max-w-[90%] md:max-w-[80%] mx-auto relative">
+            <img class="w-full h-auto object-cover" src="/images/hero/heroImages.jpg" alt="heroImage">
+
+            <img class="absolute top-0 left-0 ml-[-7px] md:ml-[-18px] w-[90px] md:w-60 h-auto"
+                src="/images/hero/featured.png" alt="featured">
+
+            <div class="absolute inset-x-0 bottom-0 h-[4rem] md:h-[8rem] flex items-center">
+                <div class="absolute inset-0 bg-[#000000] opacity-50"></div>
+                <p
+                    class="relative text-white text-lg md:text-2xl lg:text-5xl max-w-[90%] md:max-w-[80%] p-4 font-light leading-snug">
+                    <b class="font-bold">Discover the
+                        used Concession</b> Trailers & Trucks that is Right for you
+                </p>
             </div>
         </div>
     </section>
