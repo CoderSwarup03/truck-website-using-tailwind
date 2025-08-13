@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truck Website Using Tailwind Css</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-inter bg-gray-300 border-black-400">
+    <!-- top header section -->
+    <section class="bg-[#FE5214]">
+        <div class="topHeader max-w-[80%] m-auto flex justify-between items-center p-1">
+        <!-- <div class="topHeader max-w-[80%] m-auto flex flex-col sm:flex-row justify-between items-center p-1 gap-2"> -->
+            <div class="streetTop flex justify-center items-center gap-8">
+                <div class="headerLocation flex gap-2">
+                    <img src="/images/topheader/location_on_black_24dp (3) 2.svg" alt="location">
+                    <span class="text-white uppercase cursor-pointer">12 Street, Los Angeles, CA, 94101</span>
+                </div>
+                <div class="headerCall flex gap-2 ">
+                    <img src="/images/topheader/call_black_24dp (1) 2.svg" alt="call">
+                    <span class="text-white uppercase cursor-pointer">+91 70012 72388</span>
+                </div>
+            </div>
+            <div class="signInTop flex gap-4 items-center ml-5">
+                <img src="/images/topheader/person_black_24dp 1.svg" alt="person">
+                <span class="text-white uppercase cursor-pointer">Sign In</span>
+                <span class="w-1 h-5 bg-[#FFFFFF] inline-block pointer"></span>
+                <img class="pointer pl-0" src="/images/topheader/favorite_border_black_24dp 1.svg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- header section -->
+    <section class="bg-[#F5F5F5]">
+        <div class="header max-w-[80%] m-auto flex justify-between items-center">
+            <div
+                class="headerLogo w-[150px] md:w-[180px] lg:w-[230px] h-[85px] overflow-hidden flex justify-center items-center">
+                <img src="/images/logoHeader/logo 03 1.png" alt="logo">
+            </div>
+            <div>
+                <ul class="flex justify-around items-center gap-6 font-semibold font-[18px] font-medium">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Featured</a></li>
+                    <li><a href="#">Listing</a></li>
+                    <li><a href="#">Buyer</a></li>
+                    <li><a href="#">Seller</a></li>
+                    <li><a href="#">Search</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+                <div class="">
+                    <span class="w-[48px] h-[6px] bg-[#FE5214] inline-block absolute mt-6"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- hero section -->
+    <section class="mt-8">
+        <div class="hero max-w-[80%] m-auto relative">
+            <img src="/images/hero/heroImages.jpg" alt="heroImage">
+            <img class="absolute top-0 left-0 ml-[-18px] w-[15rem] h-[4rem]" src="/images/hero/featured.png"
+                alt="featured">
+            <div class="absolute inset-x-0 bottom-0 h-[8rem] flex items-center">
+                <div class="absolute inset-0 bg-[#000000] opacity-50 overflow-hidden"></div>
+                <p class="absolute text-white lg:text-5xl w-[60rem] p-6 opacity-100 font-light"><b
+                        class="font-bold">Discover the
+                        used Concession</b> Trailers & Trucks that is Right for you</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
